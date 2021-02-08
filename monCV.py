@@ -38,5 +38,34 @@ class MonCV(object):
         return page
     index.exposed = True
 
+    def artistique(self):
+        page = self.creationPage("artistique")
+        return page
+    artistique.exposed = True
+
+    def experience(self):
+        page = self.creationPage("experience")
+        return page
+    experience.exposed = True
+
+    def formation(self):
+        page = self.creationPage("formation")
+        return page
+    formation.exposed = True       
+
+    def projets(self):
+        page = self.creationPage("projets")
+        return page
+    projets.exposed = True
+
+    def apropos(self):
+        page = self.creationPage("apropos")
+        return page
+    apropos.exposed = True
     
+    def social(self):
+        page = self.creationPage("social")
+        return page
+    social.exposed = True
+
 cherrypy.quickstart(MonCV(), config="monCV.conf")
