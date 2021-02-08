@@ -58,6 +58,11 @@ class MonCV(object):
         return page
     projets.exposed = True
 
+    def interets(self):
+        page = self.creationPage("interets")
+        return page
+    interets.exposed = True
+
     def apropos(self):
         page = self.creationPage("apropos")
         return page
